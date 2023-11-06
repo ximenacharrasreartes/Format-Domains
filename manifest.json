@@ -1,0 +1,27 @@
+{
+  "vendor": "marca1",
+  "name": "format-domains",
+  "version": "0.1.4",
+  "title": "Utilitary Functions",
+  "description": "Utilitary Functions",
+  "builders": {
+    "react": "3.x"
+  },
+  "dependencies": {},
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/profile-system/*"
+      }
+    },
+    {
+      "name": "POWER_USER_DS"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
